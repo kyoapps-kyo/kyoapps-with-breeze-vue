@@ -5,3 +5,7 @@
 html {
     scroll-behavior: smooth;
 }
+
+.skill_text {
+    transition: opacity .4s;
+}

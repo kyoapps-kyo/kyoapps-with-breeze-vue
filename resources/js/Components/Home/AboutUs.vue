@@ -1,6 +1,4 @@
-<script setup>
-import { store } from "./store.ts";
-</script>
+<script setup></script>
 <template>
     <div
         id="about_us"
