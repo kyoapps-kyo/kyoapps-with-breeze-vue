@@ -21828,7 +21828,6 @@ __webpack_require__.r(__webpack_exports__);
         var percentY = Math.min(clientHeight + halfH, Math.max(-screenH, _store_ts__WEBPACK_IMPORTED_MODULE_1__.store.top - offsetTop) + halfH) / clientHeight;
         var numOfPages = 3;
         progress.value = Math.min(numOfPages - 0.5, Math.max(0.5, percentY * numOfPages));
-        console.log(clientHeight, offsetTop);
       } else {
         console.log(progress.value);
       }
@@ -21974,13 +21973,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  props: ['href', 'active'],
+  props: ["href", "active"],
   setup: function setup(__props, _ref) {
     var expose = _ref.expose;
     expose();
     var props = __props;
     var classes = (0,vue__WEBPACK_IMPORTED_MODULE_0__.computed)(function () {
-      return props.active ? 'block pl-3 pr-4 py-2 border-l-4 border-indigo-400 text-base font-medium text-indigo-700 bg-indigo-50 focus:outline-none focus:text-indigo-800 focus:bg-indigo-100 focus:border-indigo-700 transition duration-150 ease-in-out' : 'block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out';
+      return props.active ? "block pl-3 pr-4 py-2 border-l-4 border-indigo-400 text-base font-medium text-indigo-700 bg-indigo-50 focus:outline-none focus:text-indigo-800 focus:bg-indigo-100 focus:border-indigo-700 transition duration-150 ease-in-out" : "block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out";
     });
     var __returned__ = {
       props: props,
@@ -22885,7 +22884,7 @@ var _hoisted_1 = {
   "class": "snap-start w-screen py-20 bg-white text-3xl md:text-4xl flex flex-col z-10"
 };
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container mx-auto px-11\"><p class=\"leading-tight max-w-5xl mx-auto text-4xl tracking-tight\"><strong> 保持专注、不断突破，探索WEB技术最前沿。 </strong> 设计、开发出符合当下潮流的WEB应用，以人为本，不断精进，为做出使用体验最好的应用而不断努力。 </p></div><div class=\"container mx-auto px-11 text-center mt-28\"><h2>Our Team</h2><div class=\"mt-2\">the “dream-in-shell”</div><div class=\"mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 lg:gap-20\"><div><img class=\"h-full w-full object-cover\" src=\"/media/avatar.png\" alt=\"avatar\"><div class=\"text-2xl xl:text-3xl mt-2\">Wu Yang</div><div class=\"text-xl mt-2\"><a href=\"\" target=\"_blank\">@kyoapps/kyo</a></div></div></div></div>", 2);
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container mx-auto px-11\"><p class=\"leading-tight max-w-5xl mx-auto text-4xl tracking-tight\"><strong> 保持专注、不断突破，探索WEB技术最前沿。 </strong> 设计、开发出符合当下潮流的WEB应用，以人为本，不断精进，为做出使用体验最好的应用而不断努力。 </p></div><div class=\"container mx-auto px-11 text-center mt-28\"><h2>Developer</h2><div class=\"mt-2\">the “dream-in-shell”</div><div class=\"mt-10 mb-20 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 lg:gap-20\"><div><img class=\"h-full w-full object-cover\" src=\"/media/avatar.png\" alt=\"avatar\"><div class=\"text-2xl xl:text-3xl mt-2\">Wu Yang</div><div class=\"text-xl mt-2\"><a href=\"\" target=\"_blank\">@kyoapps/kyo</a></div></div></div></div>", 2);
 
 var _hoisted_4 = [_hoisted_2];
 function render(_ctx, _cache) {
@@ -22987,6 +22986,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
+  id: "skills",
   ref: "refContainer",
   "class": "bg-[rgb(12,26,20)] text-white"
 };
@@ -23000,17 +23000,17 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "skill_text",
     style: (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeStyle)("opacity:".concat($setup.opacityForBlock($setup.progress, 0)))
-  }, " 对于使用的工具了如指掌 ", 4
+  }, " 对于使用的工具了如指掌，长期活跃于各种技术社区，持续为社区贡献着自己的力量，跟进最新技术，保持自身技术领先 ", 4
   /* STYLE */
   ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
     "class": "skill_text inline-block after:content-['_']",
     style: (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeStyle)("opacity:".concat($setup.opacityForBlock($setup.progress, 1)))
-  }, "长期活跃于各种技术社区，持续为社区贡献着自己的力量，跟进最新技术，保持自身技术领先", 4
+  }, "采用Laravel Inertia Vue技术栈，快速构建应用的同时，追求应用的最佳使用体验，让运营者不必去担心单页面应用的SEO问题，保证应用的健全顺畅地运行", 4
   /* STYLE */
   ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
     "class": "skill_text inline-block",
     style: (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeStyle)("opacity:".concat($setup.opacityForBlock($setup.progress, 2)))
-  }, " 正在维护多个颇受用户好评的应用,以人为本，为客户提供持续优质的服务 ", 4
+  }, " 正在维护多个颇受用户好评的应用，以人为本，为客户提供持续优质的服务 ", 4
   /* STYLE */
   )])])], 512
   /* NEED_PATCH */
@@ -23203,53 +23203,47 @@ var _hoisted_3 = {
   "class": "absolute top-6 right-6"
 };
 var _hoisted_4 = {
-  "class": "pt-2 pb-3 space-y-1"
+  key: 0,
+  "class": "absolute top-15 right-10 backdrop-blur-sm bg-black/50 text-white p-6 rounded-lg text-xl xl:text-2xl"
 };
 
-var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Dashboard ");
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  href: "#about_us"
+}, "About")], -1
+/* HOISTED */
+);
 
-var _hoisted_6 = {
-  "class": "pt-4 pb-1 border-t border-gray-200"
-};
-var _hoisted_7 = {
-  "class": "px-4"
-};
+var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  href: "#skills"
+}, "Skills")], -1
+/* HOISTED */
+);
+
+var _hoisted_7 = [_hoisted_5, _hoisted_6];
 var _hoisted_8 = {
-  "class": "font-medium text-base text-gray-800"
-};
-var _hoisted_9 = {
-  "class": "font-medium text-sm text-gray-500"
-};
-var _hoisted_10 = {
-  "class": "mt-3 space-y-1"
-};
-
-var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Log Out ");
-
-var _hoisted_12 = {
   key: 0,
   "class": "bg-white shadow"
 };
-var _hoisted_13 = {
+var _hoisted_9 = {
   "class": "max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8"
 };
-var _hoisted_14 = {
+var _hoisted_10 = {
   "class": "bg-[rgb(12,26,20)] w-screen"
 };
-var _hoisted_15 = {
+var _hoisted_11 = {
   "class": "container mx-auto py-6"
 };
-var _hoisted_16 = {
+var _hoisted_12 = {
   "class": "w-full flex justify-center items-center space-x-4"
 };
 
-var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
+var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
   "class": "text-xl text-white"
 }, "KYO APPS", -1
 /* HOISTED */
 );
 
-var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "w-full flex flex-col md:flex-row md:justify-between items-center px-4 mt-4"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
   "class": "text-xs text-gray-500"
@@ -23296,45 +23290,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   /* PROPS */
   , ["class"])])], 2
   /* CLASS */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([{
-      block: $setup.showingNavigationDropdown,
-      hidden: !$setup.showingNavigationDropdown
-    }, "absolute top-10 right-10"])
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["BreezeResponsiveNavLink"], {
-    href: _ctx.route('dashboard'),
-    active: _ctx.route().current('dashboard')
-  }, {
-    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_5];
-    }),
-    _: 1
-    /* STABLE */
-
-  }, 8
-  /* PROPS */
-  , ["href", "active"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Responsive Settings Options "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$page.props.auth.user.name), 1
-  /* TEXT */
-  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$page.props.auth.user.email), 1
-  /* TEXT */
-  )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["BreezeResponsiveNavLink"], {
-    href: _ctx.route('logout'),
-    method: "post",
-    as: "button"
-  }, {
-    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_11];
-    }),
-    _: 1
-    /* STABLE */
-
-  }, 8
-  /* PROPS */
-  , ["href"])])])], 2
-  /* CLASS */
-  )])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Page Heading "), _ctx.$slots.header ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("header", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "header")])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Page Content "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("main", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "default")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" footer "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("footer", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["ApplicationLogo"], {
+  ), $setup.showingNavigationDropdown ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("ul", _hoisted_4, _hoisted_7)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Page Heading "), _ctx.$slots.header ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("header", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "header")])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Page Content "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("main", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "default")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" footer "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("footer", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["ApplicationLogo"], {
     "class": "h-6"
-  }), _hoisted_17]), _hoisted_18])])]);
+  }), _hoisted_13]), _hoisted_14])])]);
 }
 
 /***/ }),

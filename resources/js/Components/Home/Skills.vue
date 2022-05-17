@@ -30,7 +30,7 @@ watchEffect(() => {
 });
 </script>
 <template>
-    <div ref="refContainer" class="bg-[rgb(12,26,20)] text-white">
+    <div id="skills" ref="refContainer" class="bg-[rgb(12,26,20)] text-white">
         <div
             class="min-h-screen max-w-5xl mx-auto px-10 lg:px-20 py-24 lg:py-36 flex flex-col justify-center items-center text-4xl md:text-6xl lg:text-7xl tracking-tight font-semibold"
         >
@@ -39,18 +39,19 @@ watchEffect(() => {
                     class="skill_text"
                     :style="`opacity:${opacityForBlock(progress, 0)}`"
                 >
-                    对于使用的工具了如指掌
+                    对于使用的工具了如指掌，长期活跃于各种技术社区，持续为社区贡献着自己的力量，跟进最新技术，保持自身技术领先
                 </div>
                 <span
                     class="skill_text inline-block after:content-['_']"
                     :style="`opacity:${opacityForBlock(progress, 1)}`"
-                    >长期活跃于各种技术社区，持续为社区贡献着自己的力量，跟进最新技术，保持自身技术领先</span
+                    >采用Laravel Inertia
+                    Vue技术栈，快速构建应用的同时，追求应用的最佳使用体验，让运营者不必去担心单页面应用的SEO问题，保证应用的健全顺畅地运行</span
                 >
                 <span
                     class="skill_text inline-block"
                     :style="`opacity:${opacityForBlock(progress, 2)}`"
                 >
-                    正在维护多个颇受用户好评的应用,以人为本，为客户提供持续优质的服务
+                    正在维护多个颇受用户好评的应用，以人为本，为客户提供持续优质的服务
                 </span>
             </div>
         </div>

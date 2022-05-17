@@ -11,10 +11,10 @@
             </p>
         </div>
         <div class="container mx-auto px-11 text-center mt-28">
-            <h2>Our Team</h2>
+            <h2>Developer</h2>
             <div class="mt-2">the &ldquo;dream-in-shell&rdquo;</div>
             <div
-                class="mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 lg:gap-20"
+                class="mt-10 mb-20 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 lg:gap-20"
             >
                 <div>
                     <img
