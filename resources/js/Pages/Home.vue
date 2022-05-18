@@ -10,7 +10,7 @@ import { store } from "@/Components/Home/store.ts";
 import _ from "lodash";
 
 function scrollHandle(e) {
-    store.updateTop(e.srcElement.scrollingElement.scrollTop);
+    store.updateTop(e.target.scrollingElement.scrollTop);
     // console.log(document.body.offsetHeight);
 }
 

@@ -19,6 +19,12 @@ watchEffect(() => {
                 clientHeight + halfH,
                 Math.max(-screenH, store.top - offsetTop) + halfH
             ) / clientHeight;
+        console.log(
+            "screenY=" + store.top,
+            " offsetTop=" + offsetTop,
+            store.top - offsetTop,
+            "/ screen -" + screenH
+        );
         const numOfPages = 3;
         progress.value = Math.min(
             numOfPages - 0.5,
@@ -45,13 +51,13 @@ watchEffect(() => {
                     class="skill_text inline-block after:content-['_']"
                     :style="`opacity:${opacityForBlock(progress, 1)}`"
                     >采用Laravel Inertia
-                    Vue技术栈，快速构建应用的同时，追求应用的最佳使用体验，让运营者不必去担心单页面应用的SEO问题，保证应用的健全顺畅地运行</span
+                    Vue技术栈，快速构建应用的同时，追求应用的最佳使用体验，让运营者不必去担心单页面应用的SEO问题，让应用能够健全顺畅地运行</span
                 >
                 <span
                     class="skill_text inline-block"
                     :style="`opacity:${opacityForBlock(progress, 2)}`"
                 >
-                    正在维护多个颇受用户好评的应用，以人为本，为客户提供持续优质的服务
+                    正在维护多个颇受用户好评的应用，以人为本，长久持续为客户提供持续优质的服务
                 </span>
             </div>
         </div>

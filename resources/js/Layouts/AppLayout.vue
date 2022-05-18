@@ -83,7 +83,9 @@ onMounted(() => {
         <!-- footer -->
         <footer class="bg-[rgb(12,26,20)] w-screen">
             <div class="container mx-auto py-6">
-                <div class="w-full flex justify-center items-center space-x-4">
+                <div
+                    class="w-full flex justify-center items-center space-x-4 my-10"
+                >
                     <ApplicationLogo class="h-6"></ApplicationLogo>
                     <h2 class="text-xl text-white">KYO APPS</h2>
                 </div>
@@ -92,6 +94,11 @@ onMounted(() => {
                 >
                     <p class="text-xs text-gray-500">
                         © KYOAPPS all rights reserved (2021~)
+                    </p>
+                    <p class="text-xs text-gray-500">
+                        <a href="https://beian.miit.gov.cn"
+                            >京ICP备2022011418号</a
+                        >
                     </p>
                     <p class="text-xs text-gray-500">
                         Design & Code by

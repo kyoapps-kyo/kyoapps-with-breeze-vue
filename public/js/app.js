@@ -21826,6 +21826,7 @@ __webpack_require__.r(__webpack_exports__);
         var screenH = window.innerHeight;
         var halfH = screenH / 2;
         var percentY = Math.min(clientHeight + halfH, Math.max(-screenH, _store_ts__WEBPACK_IMPORTED_MODULE_1__.store.top - offsetTop) + halfH) / clientHeight;
+        console.log("screenY=" + _store_ts__WEBPACK_IMPORTED_MODULE_1__.store.top, " offsetTop=" + offsetTop, _store_ts__WEBPACK_IMPORTED_MODULE_1__.store.top - offsetTop, "/ screen -" + screenH);
         var numOfPages = 3;
         progress.value = Math.min(numOfPages - 0.5, Math.max(0.5, percentY * numOfPages));
       } else {
@@ -22630,7 +22631,7 @@ __webpack_require__.r(__webpack_exports__);
     expose();
 
     function scrollHandle(e) {
-      _Components_Home_store_ts__WEBPACK_IMPORTED_MODULE_6__.store.updateTop(e.srcElement.scrollingElement.scrollTop); // console.log(document.body.offsetHeight);
+      _Components_Home_store_ts__WEBPACK_IMPORTED_MODULE_6__.store.updateTop(e.target.scrollingElement.scrollTop); // console.log(document.body.offsetHeight);
     }
 
     (0,vue__WEBPACK_IMPORTED_MODULE_5__.onMounted)(function () {
@@ -23005,12 +23006,12 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
     "class": "skill_text inline-block after:content-['_']",
     style: (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeStyle)("opacity:".concat($setup.opacityForBlock($setup.progress, 1)))
-  }, "采用Laravel Inertia Vue技术栈，快速构建应用的同时，追求应用的最佳使用体验，让运营者不必去担心单页面应用的SEO问题，保证应用的健全顺畅地运行", 4
+  }, "采用Laravel Inertia Vue技术栈，快速构建应用的同时，追求应用的最佳使用体验，让运营者不必去担心单页面应用的SEO问题，让应用能够健全顺畅地运行", 4
   /* STYLE */
   ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
     "class": "skill_text inline-block",
     style: (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeStyle)("opacity:".concat($setup.opacityForBlock($setup.progress, 2)))
-  }, " 正在维护多个颇受用户好评的应用，以人为本，为客户提供持续优质的服务 ", 4
+  }, " 正在维护多个颇受用户好评的应用，以人为本，长久持续为客户提供持续优质的服务 ", 4
   /* STYLE */
   )])])], 512
   /* NEED_PATCH */
@@ -23234,7 +23235,7 @@ var _hoisted_11 = {
   "class": "container mx-auto py-6"
 };
 var _hoisted_12 = {
-  "class": "w-full flex justify-center items-center space-x-4"
+  "class": "w-full flex justify-center items-center space-x-4 my-10"
 };
 
 var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
@@ -23243,19 +23244,7 @@ var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 /* HOISTED */
 );
 
-var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "w-full flex flex-col md:flex-row md:justify-between items-center px-4 mt-4"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "text-xs text-gray-500"
-}, " © KYOAPPS all rights reserved (2021~) "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-  "class": "text-xs text-gray-500"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Design & Code by "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-  href: "https://github.com/kyoapps-kyo",
-  "class": "underline hover:text-opacity-50",
-  target: "_blank"
-}, " Wu Yang ")])], -1
-/* HOISTED */
-);
+var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"w-full flex flex-col md:flex-row md:justify-between items-center px-4 mt-4\"><p class=\"text-xs text-gray-500\"> © KYOAPPS all rights reserved (2021~) </p><p class=\"text-xs text-gray-500\"><a href=\"https://beian.miit.gov.cn\">京ICP备2022011418号</a></p><p class=\"text-xs text-gray-500\"> Design &amp; Code by <a href=\"https://github.com/kyoapps-kyo\" class=\"underline hover:text-opacity-50\" target=\"_blank\"> Wu Yang </a></p></div>", 1);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" button Navigation Menu "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("nav", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
