@@ -38,8 +38,8 @@ watchEffect(() => {
             playsInline
             class="absolute w-full h-full object-cover -z-10"
         >
-            <source src="/media/masthead-bg.mp4" type="video/mp4;" />
             <source src="/media/masthead-bg.flv" type="video/flv;codecs=h264" />
+            <source src="/media/masthead-bg.mp4" type="video/mp4;" />
         </video>
         <div
             class="flex-grow-0 pt-16 transition-opacity duration-1000 h-12 w-12"
