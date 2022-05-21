@@ -32,7 +32,7 @@ watchEffect(() => {
             Math.max(0.5, percentY * numOfPages)
         );
     } else {
-        console.log(progress.value);
+        console.log("refContainer 还未初始化");
     }
 });
 </script>

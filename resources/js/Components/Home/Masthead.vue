@@ -21,7 +21,7 @@ watchEffect(() => {
             store.top / refContainer.value.clientHeight
         );
     } else {
-        console.log(progress.value);
+        console.log("refContainer 还未初始化");
     }
 });
 </script>
