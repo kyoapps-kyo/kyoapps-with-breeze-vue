@@ -23,7 +23,7 @@ onMounted(() => {
         <div class="w-screen h-full">
             <!-- button Navigation Menu -->
             <nav class="fixed container mx-auto">
-                <div class="absolute top-6 right-6">
+                <div class="absolute top-[5vh] right-[5vw] md:right-0">
                     <div
                         class="transition-opacity duration-1000"
                         :class="{

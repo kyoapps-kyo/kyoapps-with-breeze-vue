@@ -21769,7 +21769,7 @@ __webpack_require__.r(__webpack_exports__);
       if (refContainer.value) {
         progress.value = Math.min(1, _store_ts__WEBPACK_IMPORTED_MODULE_0__.store.top / refContainer.value.clientHeight);
       } else {
-        console.log(progress.value);
+        console.log("refContainer 还未初始化");
       }
     });
     var __returned__ = {
@@ -21834,7 +21834,7 @@ __webpack_require__.r(__webpack_exports__);
         var numOfPages = 3;
         progress.value = Math.min(numOfPages - 0.5, Math.max(0.5, percentY * numOfPages));
       } else {
-        console.log(progress.value);
+        console.log("refContainer 还未初始化");
       }
     });
     var __returned__ = {
@@ -23313,7 +23313,7 @@ var _hoisted_2 = {
   "class": "fixed container mx-auto"
 };
 var _hoisted_3 = {
-  "class": "absolute top-6 right-6"
+  "class": "absolute top-[5vh] right-[5vw] md:right-0"
 };
 var _hoisted_4 = {
   key: 0,
