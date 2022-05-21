@@ -2,6 +2,7 @@
 import { store } from "./store.ts";
 import AppLogo from "@/Components/ApplicationLogo.vue";
 import { ref, onMounted, watchEffect } from "vue";
+import VueTyped from "@/Components/VueTypedJs.vue";
 
 const mounted = ref(false);
 const refContainer = ref(null);
@@ -36,9 +37,10 @@ watchEffect(() => {
             loop
             muted
             playsInline
+            webkit-playsInline
+            x5-video-player-type="h5"
             class="absolute w-full h-full object-cover -z-10"
         >
-            <source src="/media/masthead-bg.flv" type="video/flv;codecs=h264" />
             <source src="/media/masthead-bg.mp4" type="video/mp4;" />
         </video>
         <div
@@ -52,7 +54,14 @@ watchEffect(() => {
         >
             <h1 class="mb-6 text-4xl xl:text-5xl">KYOAPPS</h1>
             <h2 class="mb-2 text-2xl xl:text-3xl tracking-tight">
-                <span id="typing">WEB应用开发,DONE IT</span>
+                <VueTyped
+                    :strings="['WEB应用开发，DONE IT', '设计、构建、运营']"
+                    :typeSpeed="100"
+                    :backSpeed="60"
+                    :loop="true"
+                >
+                    <span class="typing"></span>
+                </VueTyped>
             </h2>
         </div>
         <div

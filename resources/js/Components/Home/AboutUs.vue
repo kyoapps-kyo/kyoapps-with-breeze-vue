@@ -6,8 +6,8 @@
     >
         <div class="container mx-auto px-11">
             <p class="leading-tight max-w-5xl mx-auto text-4xl tracking-tight">
-                <strong> 保持专注、不断突破，探索WEB技术最前沿。 </strong>
-                设计、开发出符合当下潮流的WEB应用，以人为本，不断精进，为做出使用体验最好的应用而不断努力。
+                <strong> 保持专注、不断突破，探索技术最前沿。 </strong
+                >手机作为当下最重要的流量入口工具，将传统适用于PC浏览的WEB应用，转换成符合手机上使用，用户体验优秀的单页面WEB应用，是我最感兴趣的事情
             </p>
         </div>
         <div class="container mx-auto px-11 text-center mt-28">

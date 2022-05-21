@@ -90,13 +90,13 @@ onMounted(() => {
                     <h2 class="text-xl text-white">KYO APPS</h2>
                 </div>
                 <div
-                    class="w-full flex flex-col md:flex-row md:justify-between items-center px-4 mt-4"
+                    class="w-full flex flex-col md:flex-row md:justify-center md:space-x-2 items-center px-4 mt-4"
                 >
                     <p class="text-xs text-gray-500">
                         © KYOAPPS all rights reserved (2021~)
                     </p>
                     <p class="text-xs text-gray-500">
-                        <a href="https://beian.miit.gov.cn"
+                        <a class="underline" href="https://beian.miit.gov.cn"
                             >京ICP备2022011418号</a
                         >
                     </p>

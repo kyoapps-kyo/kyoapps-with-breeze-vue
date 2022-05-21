@@ -6,6 +6,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: rgb(12, 26, 20);
+}
+
 .skill_text {
     transition: opacity .4s;
 }

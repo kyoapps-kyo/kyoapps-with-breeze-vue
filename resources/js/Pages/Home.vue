@@ -26,7 +26,10 @@ onUnmounted(() => {
 
 <template>
     <Head title="Home">
-        <meta name="description" content="App develop" />
+        <meta
+            name="description"
+            content="单页面web应用设计构建，找到最适合的方法"
+        />
     </Head>
     <AppLayout>
         <Masthead />
