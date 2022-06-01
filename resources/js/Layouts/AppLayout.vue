@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted } from "vue";
+import { ref, onMounted, onUnmounted } from "vue";
 import ApplicationLogo from "@/Components/ApplicationLogo.vue";
 import BreezeDropdown from "@/Components/Dropdown.vue";
 import BreezeDropdownLink from "@/Components/DropdownLink.vue";
@@ -7,14 +7,30 @@ import BreezeNavLink from "@/Components/NavLink.vue";
 import BreezeResponsiveNavLink from "@/Components/ResponsiveNavLink.vue";
 import { Link } from "@inertiajs/inertia-vue3";
 import { Icon } from "@iconify/vue";
+import _ from "lodash";
+
 const showingNavigationDropdown = ref(false);
 
 const mounted = ref(false);
+const scrollY = ref(0);
 
 onMounted(() => {
     setTimeout(() => {
         mounted.value = true;
     }, 500);
+});
+// const scrollHandle = _.throttle((e) => {
+//     scrollY.value = e.target.scrollingElement.scrollTop;
+// }, 1);
+const scrollHandle = (e) => {
+    scrollY.value = e.target.scrollingElement.scrollTop;
+};
+onMounted(() => {
+    window.addEventListener("scroll", scrollHandle);
+});
+
+onUnmounted(() => {
+    window.removeEventListener("scroll", scrollHandle);
 });
 </script>
 
@@ -22,7 +38,7 @@ onMounted(() => {
     <div>
         <div class="w-screen h-full">
             <!-- button Navigation Menu -->
-            <nav class="fixed container mx-auto">
+            <nav class="fixed container mx-auto z-50">
                 <div class="absolute top-[5vh] right-[5vw] md:right-0">
                     <div
                         class="transition-opacity duration-1000"
@@ -76,7 +92,7 @@ onMounted(() => {
 
             <!-- Page Content -->
             <main>
-                <slot />
+                <slot :scrollY="scrollY" />
             </main>
         </div>
 

@@ -6,22 +6,6 @@ import AboutUs from "@/Components/Home/AboutUs.vue";
 import Skills from "@/Components/Home/Skills.vue";
 
 import { onMounted, onUnmounted } from "vue";
-import { store } from "@/Components/Home/store.ts";
-import _ from "lodash";
-
-function scrollHandle(e) {
-    store.updateTop(e.target.scrollingElement.scrollTop);
-    // console.log(document.body.offsetHeight);
-}
-
-onMounted(() => {
-    window.addEventListener("scroll", _.throttle(scrollHandle, 10));
-});
-
-onUnmounted(() => {
-    window.removeEventListener("scroll", _.throttle(scrollHandle, 10));
-    console.log("unmounted");
-});
 </script>
 
 <template>
@@ -31,10 +15,9 @@ onUnmounted(() => {
             content="单页面web应用设计构建，找到最适合的方法"
         />
     </Head>
-    <AppLayout>
-        <Masthead />
+    <AppLayout v-slot="slotProps">
+        <Masthead :scrollY="slotProps.scrollY" />
         <AboutUs />
-        <Skills />
     </AppLayout>
 </template>
 

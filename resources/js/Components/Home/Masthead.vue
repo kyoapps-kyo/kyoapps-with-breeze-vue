@@ -1,5 +1,4 @@
 <script setup>
-import { store } from "./store.ts";
 import AppLogo from "@/Components/ApplicationLogo.vue";
 import { ref, onMounted, watchEffect } from "vue";
 import VueTyped from "@/Components/VueTypedJs.vue";
@@ -7,6 +6,9 @@ import VueTyped from "@/Components/VueTypedJs.vue";
 const mounted = ref(false);
 const refContainer = ref(null);
 const progress = ref(0);
+const props = defineProps({
+    scrollY: Number,
+});
 
 onMounted(() => {
     setTimeout(() => {
@@ -18,10 +20,8 @@ watchEffect(() => {
     if (refContainer.value) {
         progress.value = Math.min(
             1,
-            store.top / refContainer.value.clientHeight
+            props.scrollY / refContainer.value.clientHeight
         );
-    } else {
-        console.log("refContainer 还未初始化");
     }
 });
 </script>
@@ -29,20 +29,13 @@ watchEffect(() => {
 <template>
     <div
         ref="refContainer"
-        class="h-screen w-screen flex flex-col items-center justify-center -z-10 sticky top-0"
+        class="h-screen w-screen flex flex-col items-center justify-center sticky -z-10 top-0"
         :style="`transform: translateY(${-progress * 20}vh);`"
     >
-        <video
-            autoplay
-            loop
-            muted
-            playsInline
-            webkit-playsInline
-            x5-video-player-type="h5"
+        <img
             class="absolute w-full h-full object-cover -z-10"
-        >
-            <source src="/media/masthead-bg.mp4" type="video/mp4;" />
-        </video>
+            src="/media/masthead-bg.jpg"
+        />
         <div
             class="flex-grow-0 pt-16 transition-opacity duration-1000 h-12 w-12"
             :class="{ 'opacity-0': !mounted, 'opacity-100': mounted }"
@@ -50,10 +43,14 @@ watchEffect(() => {
             <AppLogo></AppLogo>
         </div>
         <div
-            class="p-12 font-bold text-white drop-shadow-[0_5px_3px_rgba(255,255,255,0.6)] text-center flex flex-1 items-center justify-center flex-col"
+            class="p-12 font-bold text-center flex flex-1 items-center justify-center flex-col"
         >
-            <h1 class="mb-6 text-4xl xl:text-5xl">KYOAPPS</h1>
-            <h2 class="mb-2 text-2xl xl:text-3xl tracking-tight">
+            <h1 class="mb-6 text-4xl xl:text-5xl text-gradient-mint-blue-dark">
+                KYOAPPS - Web应用开发
+            </h1>
+            <h2
+                class="mb-2 text-2xl xl:text-3xl tracking-tight text-gradient-mint-blue-dark"
+            >
                 <VueTyped
                     :strings="['WEB应用开发，DONE IT', '设计、构建、运营']"
                     :typeSpeed="100"
@@ -66,7 +63,7 @@ watchEffect(() => {
         </div>
         <div
             id="scroll_down"
-            class="mb-24 rounded-full p-1 bg-gradient-to-t from-green-500 to-transparent flex-grow-0 lg:mb-32 transition-all duration-1000 transform"
+            class="mb-24 rounded-full p-1 bg-gradient-to-br from-[#a2facf] to-[#64acff] flex-grow-0 lg:mb-32 transition-all duration-1000 transform"
             :class="{
                 'opacity-0': !mounted,
                 'translate-y-20': !mounted,
@@ -83,3 +80,12 @@ watchEffect(() => {
         </div>
     </div>
 </template>
+<style scoped>
+.text-gradient-mint-blue-dark {
+    background: -webkit-linear-gradient(-70deg, #a2facf 0%, #64acff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+}
+</style>

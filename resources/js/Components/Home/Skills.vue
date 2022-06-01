@@ -1,6 +1,6 @@
 <script setup>
 import { ref, watchEffect } from "vue";
-import { store } from "./store.ts";
+import { store } from "./store.js";
 
 const refContainer = ref(null);
 const progress = ref(0);
@@ -14,18 +14,18 @@ watchEffect(() => {
         const { clientHeight, offsetTop } = refContainer.value;
         const screenH = window.innerHeight;
         const halfH = screenH / 2;
-        let screenY = store.top;
+        let screenY = store.scrollY;
         const percentY =
             Math.min(
                 clientHeight + halfH,
                 Math.max(-screenH, screenY - offsetTop) + halfH
             ) / clientHeight;
-        console.log(
-            "screenY= " + screenY,
-            " offsetTop= " + offsetTop,
-            " screenY - offsetTop = " + (screenY - offsetTop),
-            " screen - " + screenH
-        );
+        // console.log(
+        //     "screenY= " + screenY,
+        //     " offsetTop= " + offsetTop,
+        //     " screenY - offsetTop = " + (screenY - offsetTop),
+        //     " screen - " + screenH
+        // );
         const numOfPages = 3;
         progress.value = Math.min(
             numOfPages - 0.5,

@@ -7,7 +7,9 @@ html {
 }
 
 body {
-    background-color: rgb(12, 26, 20);
+    --tw-bg-opacity: 1;
+    background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+
 }
 
 .skill_text {
