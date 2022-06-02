@@ -21747,6 +21747,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _iconify_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @iconify/vue */ "./node_modules/@iconify/vue/dist/iconify.mjs");
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+/* harmony import */ var _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-vue3 */ "./node_modules/@inertiajs/inertia-vue3/dist/index.js");
+
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -21785,7 +21787,8 @@ __webpack_require__.r(__webpack_exports__);
       scale: scale,
       Icon: _iconify_vue__WEBPACK_IMPORTED_MODULE_0__.Icon,
       ref: vue__WEBPACK_IMPORTED_MODULE_1__.ref,
-      watchEffect: vue__WEBPACK_IMPORTED_MODULE_1__.watchEffect
+      watchEffect: vue__WEBPACK_IMPORTED_MODULE_1__.watchEffect,
+      Link: _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_2__.Link
     };
     Object.defineProperty(__returned__, '__isScriptSetup', {
       enumerable: false,
@@ -23016,13 +23019,41 @@ var _hoisted_1 = {
   "class": "relative max-w-4xl mx-auto"
 };
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"max-w-xl mx-auto w-full flex items-start justify-between px-6 md:px-0\"><p class=\"leading-tight text-lg tracking-tight text-[#627597]\"><strong class=\"text-2xl text-gradient-pink-blue\"> Wu Yang </strong><br> Digital Craftsman ( Developer / Designer ) </p><div class=\"avatar\"><div class=\"w-24 rounded-full ring ring-primary overflow-hidden bg-gradient-to-br from-[#db469f] to-[#2188ff]\"><img src=\"/media/avatar.png\"></div></div></div><div class=\"max-w-xl mx-auto w-full px-6 md:px-0 mb-6\"><h3 class=\"text-xl font-bold leading-[1.2] my-6\"><span class=\"border-b-4 pb-1\">工作 / Work</span></h3><p class=\"indent-8\"><span class=\"text-gradient-pink-blue\">Wu Yang - 午羊</span> ，全栈开发者，位于东京 / 京都，热衷于构建有趣的数字服务和内容，思考计划和设计使用代码解决生活中的难题，不在编程的时候，会拿着相机到处闲逛，记录有趣的影像，目前他正在筹划建立一个内容分享频道，展示平时用代码制作的有趣内容 </p></div><div class=\"max-w-xl mx-auto w-full px-6 md:px-0 mb-6\"><h3 class=\"text-xl font-bold leading-[1.2] my-6\"><span class=\"border-b-4 pb-1\">轨迹 / Bio</span></h3><div class=\"flex items-start\"><p class=\"font-bold mr-12\">1991</p><p>Born in Hunan, CHINA</p></div><div class=\"flex items-start\"><p class=\"font-bold mr-12\">2018</p><p> Completed the Master&#39;s Program in the Graduate School of Information Science at Kyoto Institute of Science and Technology </p></div><div class=\"flex items-start\"><p class=\"font-bold mr-12\">2019</p><p>Working as a freelancer</p></div></div><div class=\"max-w-xl mx-auto w-full px-6 md:px-0 mb-6\"><h3 class=\"text-xl font-bold leading-[1.2] my-6\"><span class=\"border-b-4 pb-1\">兴趣 / I ♥</span></h3><p class=\"indent-8\">健身、音乐、蓝调口琴、摄影、料理</p></div>", 4);
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"max-w-xl mx-auto w-full flex items-start justify-between px-6 md:px-0\"><p class=\"leading-tight text-lg tracking-tight text-[#627597]\"><strong class=\"text-2xl text-gradient-pink-blue\"> Wu Yang </strong><br> Digital Craftsman ( Developer / Designer ) </p><div class=\"avatar\"><div class=\"w-24 rounded-full ring ring-primary overflow-hidden bg-gradient-to-br from-[#db469f] to-[#2188ff]\"><img src=\"/media/avatar.png\"></div></div></div>", 1);
 
-var _hoisted_6 = {
+var _hoisted_3 = {
   "class": "max-w-xl mx-auto w-full px-6 md:px-0 mb-6"
 };
 
-var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
+  "class": "text-xl font-bold leading-[1.2] my-6"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "border-b-4 pb-1"
+}, "工作 / Work")], -1
+/* HOISTED */
+);
+
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "indent-8"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "text-gradient-pink-blue"
+}, "Wu Yang - 午羊"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" ，全栈开发者，位于东京 / 京都，热衷于构建有趣的数字服务和内容，思考计划和设计使用代码解决生活中的难题，不在编程的时候，会拿着相机到处闲逛，记录有趣的影像，目前他正在筹划建立一个内容分享频道，展示平时用代码制作的有趣内容 ")], -1
+/* HOISTED */
+);
+
+var _hoisted_6 = {
+  "class": "flex items-center justify-center mt-6"
+};
+
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("My Profile ");
+
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"max-w-xl mx-auto w-full px-6 md:px-0 mb-6\"><h3 class=\"text-xl font-bold leading-[1.2] my-6\"><span class=\"border-b-4 pb-1\">轨迹 / Bio</span></h3><div class=\"flex items-start\"><p class=\"font-bold mr-12\">1991</p><p>Born in Hunan, CHINA</p></div><div class=\"flex items-start\"><p class=\"font-bold mr-12\">2018</p><p> Completed the Master&#39;s Program in the Graduate School of Information Science at Kyoto Institute of Science and Technology </p></div><div class=\"flex items-start\"><p class=\"font-bold mr-12\">2019</p><p>Working as a freelancer</p></div></div><div class=\"max-w-xl mx-auto w-full px-6 md:px-0 mb-6\"><h3 class=\"text-xl font-bold leading-[1.2] my-6\"><span class=\"border-b-4 pb-1\">兴趣 / I ♥</span></h3><p class=\"indent-8\">健身、音乐、蓝调口琴、摄影、料理</p></div>", 2);
+
+var _hoisted_10 = {
+  "class": "max-w-xl mx-auto w-full px-6 md:px-0 mb-6"
+};
+
+var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
   "class": "text-xl font-bold leading-[1.2] my-6"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
   "class": "border-b-4 pb-1"
@@ -23030,18 +23061,24 @@ var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 /* HOISTED */
 );
 
-var _hoisted_8 = {
+var _hoisted_12 = {
   "class": "pl-6 text-gray-700"
 };
-var _hoisted_9 = {
+var _hoisted_13 = {
   "class": "hover:bg-gradient-to-br hover:from-[#db469f] hover:to-[#2188ff] hover:text-white hover:cursor-pointer rounded-lg w-fit p-2 mt-2"
 };
-var _hoisted_10 = {
+var _hoisted_14 = {
   href: "https://github.com/kyoapps-kyo",
   "class": "flex font-semibold"
 };
 
-var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" @kyoapps-kyo ");
+var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" @kyoapps-kyo ");
+
+var _hoisted_16 = {
+  "class": "flex items-center justify-center mt-6"
+};
+
+var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("More popular posts ");
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
@@ -23060,12 +23097,42 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     id: "about_us",
     "class": "max-w-4xl mx-auto py-20 bg-white flex flex-col transition duration-500",
     style: (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeStyle)("opacity: ".concat($setup.opacity, "; transform:scale(").concat($setup.scale, ");"))
-  }, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [_hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Icon"], {
+  }, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [_hoisted_4, _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Link"], {
+    "class": "py-2 px-4 rounded-lg border border-[#c47cde] text-gray-900 inline-flex items-center hover:bg-gradient-to-br hover:from-[#db469f] hover:to-[#2188ff] hover:text-white"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Icon"], {
+        icon: "ep:arrow-right",
+        width: "14",
+        height: "14",
+        inline: true,
+        "class": "ml-4"
+      })];
+    }),
+    _: 1
+    /* STABLE */
+
+  })])]), _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [_hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Icon"], {
     icon: "ant-design:github-filled",
     width: "24",
     height: "24",
     "class": "mr-2"
-  }), _hoisted_11])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <li\n                    class=\"hover:bg-gradient-to-br hover:from-[#db469f] hover:to-[#2188ff] hover:text-white hover:cursor-pointer rounded-lg w-fit p-2 mt-2\"\n                >\n                    <a href=\"#\" class=\"flex font-semibold\">\n                        <Icon\n                            icon=\"ant-design:youtube-filled\"\n                            width=\"24\"\n                            height=\"24\"\n                            class=\"mr-2\"\n                        />\n                        @kyoapps-channel\n                    </a>\n                </li>\n                <li\n                    class=\"hover:bg-gradient-to-br hover:from-[#db469f] hover:to-[#2188ff] hover:text-white hover:cursor-pointer rounded-lg w-fit p-2 mt-2\"\n                >\n                    <a href=\"#\" class=\"flex font-semibold\">\n                        <Icon\n                            icon=\"ant-design:wechat-filled\"\n                            width=\"24\"\n                            height=\"24\"\n                            class=\"mr-2\"\n                        />\n                        @wuyang\n                    </a>\n                </li>\n                <li\n                    class=\"hover:bg-gradient-to-br hover:from-[#db469f] hover:to-[#2188ff] hover:text-white hover:cursor-pointer rounded-lg w-fit p-2 mt-2\"\n                >\n                    <a href=\"#\" class=\"flex font-semibold\">\n                        <Icon\n                            icon=\"ant-design:weibo-circle-filled\"\n                            width=\"24\"\n                            height=\"24\"\n                            class=\"mr-2\"\n                        />\n                        @wuyang\n                    </a>\n                </li> ")])])], 4
+  }), _hoisted_15])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <li\n                    class=\"hover:bg-gradient-to-br hover:from-[#db469f] hover:to-[#2188ff] hover:text-white hover:cursor-pointer rounded-lg w-fit p-2 mt-2\"\n                >\n                    <a href=\"#\" class=\"flex font-semibold\">\n                        <Icon\n                            icon=\"ant-design:youtube-filled\"\n                            width=\"24\"\n                            height=\"24\"\n                            class=\"mr-2\"\n                        />\n                        @kyoapps-channel\n                    </a>\n                </li>\n                <li\n                    class=\"hover:bg-gradient-to-br hover:from-[#db469f] hover:to-[#2188ff] hover:text-white hover:cursor-pointer rounded-lg w-fit p-2 mt-2\"\n                >\n                    <a href=\"#\" class=\"flex font-semibold\">\n                        <Icon\n                            icon=\"ant-design:wechat-filled\"\n                            width=\"24\"\n                            height=\"24\"\n                            class=\"mr-2\"\n                        />\n                        @wuyang\n                    </a>\n                </li>\n                <li\n                    class=\"hover:bg-gradient-to-br hover:from-[#db469f] hover:to-[#2188ff] hover:text-white hover:cursor-pointer rounded-lg w-fit p-2 mt-2\"\n                >\n                    <a href=\"#\" class=\"flex font-semibold\">\n                        <Icon\n                            icon=\"ant-design:weibo-circle-filled\"\n                            width=\"24\"\n                            height=\"24\"\n                            class=\"mr-2\"\n                        />\n                        @wuyang\n                    </a>\n                </li> ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Link"], {
+    "class": "py-2 px-4 rounded-lg border border-[#c47cde] text-gray-900 inline-flex items-center hover:bg-gradient-to-br hover:from-[#db469f] hover:to-[#2188ff] hover:text-white"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Icon"], {
+        icon: "ep:arrow-right",
+        width: "14",
+        height: "14",
+        inline: true,
+        "class": "ml-4"
+      })];
+    }),
+    _: 1
+    /* STABLE */
+
+  })])])], 4
   /* STYLE */
   )], 512
   /* NEED_PATCH */
@@ -23428,46 +23495,50 @@ var _hoisted_3 = {
 };
 var _hoisted_4 = {
   key: 0,
-  "class": "absolute top-15 right-10 backdrop-blur-sm bg-black/50 text-white p-6 rounded-lg text-xl xl:text-2xl"
+  "class": "absolute top-15 right-10 backdrop-blur-sm bg-black/50 p-6 rounded-lg text-xl xl:text-2xl w-[200px]"
+};
+var _hoisted_5 = {
+  "class": "my-3"
 };
 
-var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-  href: "#about_us"
-}, "About")], -1
-/* HOISTED */
-);
+var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("作品 / Works");
 
-var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-  href: "#skills"
-}, "Skills")], -1
-/* HOISTED */
-);
+var _hoisted_7 = {
+  "class": "my-3"
+};
 
-var _hoisted_7 = [_hoisted_5, _hoisted_6];
-var _hoisted_8 = {
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("内容 / Posts");
+
+var _hoisted_9 = {
+  "class": "my-3"
+};
+
+var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("源码 / Source");
+
+var _hoisted_11 = {
   key: 0,
   "class": "bg-white shadow"
 };
-var _hoisted_9 = {
+var _hoisted_12 = {
   "class": "max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8"
 };
-var _hoisted_10 = {
+var _hoisted_13 = {
   "class": "w-screen"
 };
-var _hoisted_11 = {
+var _hoisted_14 = {
   "class": "container mx-auto py-6"
 };
-var _hoisted_12 = {
+var _hoisted_15 = {
   "class": "w-full flex justify-center items-center space-x-4 my-10"
 };
 
-var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
+var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
   "class": "text-xl text-gradient-mint-blue-dark"
 }, " KYO APPS ", -1
 /* HOISTED */
 );
 
-var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"w-full flex flex-col md:flex-row md:justify-center md:space-x-2 items-center px-4 mt-4\"><p class=\"text-xs text-gray-500\"> © KYOAPPS all rights reserved (2021~) </p><p class=\"text-xs text-gray-500\"><a class=\"underline\" href=\"https://beian.miit.gov.cn\">京ICP备2022011418号</a></p><p class=\"text-xs text-gray-500\"> Design &amp; Code by <a href=\"https://github.com/kyoapps-kyo\" class=\"underline hover:text-opacity-50\" target=\"_blank\"> Wu Yang </a></p></div>", 1);
+var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"w-full flex flex-col md:flex-row md:justify-center md:space-x-2 items-center px-4 mt-4\"><p class=\"text-xs text-gray-500\"> © KYOAPPS all rights reserved (2021~) </p><p class=\"text-xs text-gray-500\"><a class=\"underline\" href=\"https://beian.miit.gov.cn\">京ICP备2022011418号</a></p><p class=\"text-xs text-gray-500\"> Design &amp; Code by <a href=\"https://github.com/kyoapps-kyo\" class=\"underline hover:text-opacity-50\" target=\"_blank\"> Wu Yang </a></p></div>", 1);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" button Navigation Menu "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("nav", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
@@ -23479,7 +23550,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     onClick: _cache[0] || (_cache[0] = function ($event) {
       return $setup.showingNavigationDropdown = !$setup.showingNavigationDropdown;
     }),
-    "class": "inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+    "class": "inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-600 focus:outline-none focus:text-gray-600 transition duration-500 ease-in-out hover:bg-gradient-to-br hover:from-[#a2facf] hover:to-[#64acff]"
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Icon"], {
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)({
       hidden: $setup.showingNavigationDropdown,
@@ -23502,11 +23573,47 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   /* PROPS */
   , ["class"])])], 2
   /* CLASS */
-  ), $setup.showingNavigationDropdown ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("ul", _hoisted_4, _hoisted_7)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Page Heading "), _ctx.$slots.header ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("header", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "header")])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Page Content "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("main", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "default", {
+  ), $setup.showingNavigationDropdown ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("ul", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Link"], {
+    "class": "hover:border-b border-[#a2facf] text-gradient-mint-blue-dark",
+    href: "#"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_6];
+    }),
+    _: 1
+    /* STABLE */
+
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Link"], {
+    "class": "hover:border-b border-[#a2facf] text-gradient-mint-blue-dark",
+    href: "#"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_8];
+    }),
+    _: 1
+    /* STABLE */
+
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Link"], {
+    "class": "hover:border-b border-[#a2facf] inline-flex items-center text-gradient-mint-blue-dark",
+    href: "#"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Icon"], {
+        icon: "ant-design:github-filled",
+        width: "20",
+        height: "20",
+        "class": "ml-2 text-gray-400",
+        inline: true
+      })];
+    }),
+    _: 1
+    /* STABLE */
+
+  })])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Page Heading "), _ctx.$slots.header ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("header", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "header")])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Page Content "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("main", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "default", {
     scrollY: $setup.scrollY
-  })])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" footer "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("footer", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["ApplicationLogo"], {
+  })])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" footer "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("footer", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["ApplicationLogo"], {
     "class": "h-6"
-  }), _hoisted_13]), _hoisted_14])])]);
+  }), _hoisted_16]), _hoisted_17])])]);
 }
 
 /***/ }),

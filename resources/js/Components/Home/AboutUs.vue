@@ -1,6 +1,7 @@
 <script setup>
 import { Icon } from "@iconify/vue";
 import { ref, watchEffect } from "vue";
+import { Link } from "@inertiajs/inertia-vue3";
 const props = defineProps({
     scrollY: Number,
 });
@@ -69,6 +70,19 @@ watchEffect(() => {
                     ，全栈开发者，位于东京 /
                     京都，热衷于构建有趣的数字服务和内容，思考计划和设计使用代码解决生活中的难题，不在编程的时候，会拿着相机到处闲逛，记录有趣的影像，目前他正在筹划建立一个内容分享频道，展示平时用代码制作的有趣内容
                 </p>
+                <div class="flex items-center justify-center mt-6">
+                    <Link
+                        class="py-2 px-4 rounded-lg border border-[#c47cde] text-gray-900 inline-flex items-center hover:bg-gradient-to-br hover:from-[#db469f] hover:to-[#2188ff] hover:text-white"
+                        >My Profile
+                        <Icon
+                            icon="ep:arrow-right"
+                            width="14"
+                            height="14"
+                            :inline="true"
+                            class="ml-4"
+                        />
+                    </Link>
+                </div>
             </div>
             <div class="max-w-xl mx-auto w-full px-6 md:px-0 mb-6">
                 <h3 class="text-xl font-bold leading-[1.2] my-6">
@@ -158,6 +172,19 @@ watchEffect(() => {
                     </a>
                 </li> -->
                 </ul>
+                <div class="flex items-center justify-center mt-6">
+                    <Link
+                        class="py-2 px-4 rounded-lg border border-[#c47cde] text-gray-900 inline-flex items-center hover:bg-gradient-to-br hover:from-[#db469f] hover:to-[#2188ff] hover:text-white"
+                        >More popular posts
+                        <Icon
+                            icon="ep:arrow-right"
+                            width="14"
+                            height="14"
+                            :inline="true"
+                            class="ml-4"
+                        />
+                    </Link>
+                </div>
             </div>
         </div>
     </div>

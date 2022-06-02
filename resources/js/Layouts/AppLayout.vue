@@ -52,7 +52,7 @@ onUnmounted(() => {
                                 showingNavigationDropdown =
                                     !showingNavigationDropdown
                             "
-                            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+                            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-600 focus:outline-none focus:text-gray-600 transition duration-500 ease-in-out hover:bg-gradient-to-br hover:from-[#a2facf] hover:to-[#64acff]"
                         >
                             <Icon
                                 :class="{
@@ -76,10 +76,34 @@ onUnmounted(() => {
                     </div>
                     <ul
                         v-if="showingNavigationDropdown"
-                        class="absolute top-15 right-10 backdrop-blur-sm bg-black/50 text-white p-6 rounded-lg text-xl xl:text-2xl"
+                        class="absolute top-15 right-10 backdrop-blur-sm bg-black/50 p-6 rounded-lg text-xl xl:text-2xl w-[200px]"
                     >
-                        <li><a href="#about_us">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
+                        <li class="my-3">
+                            <Link
+                                class="hover:border-b border-[#a2facf] text-gradient-mint-blue-dark"
+                                href="#"
+                                >作品 / Works</Link
+                            >
+                        </li>
+                        <li class="my-3">
+                            <Link
+                                class="hover:border-b border-[#a2facf] text-gradient-mint-blue-dark"
+                                href="#"
+                                >内容 / Posts</Link
+                            >
+                        </li>
+                        <li class="my-3">
+                            <Link
+                                class="hover:border-b border-[#a2facf] inline-flex items-center text-gradient-mint-blue-dark"
+                                href="#"
+                                >源码 / Source<Icon
+                                    icon="ant-design:github-filled"
+                                    width="20"
+                                    height="20"
+                                    class="ml-2 text-gray-400"
+                                    :inline="true"
+                            /></Link>
+                        </li>
                     </ul>
                 </div>
             </nav>
