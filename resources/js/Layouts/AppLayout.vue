@@ -19,12 +19,12 @@ onMounted(() => {
         mounted.value = true;
     }, 500);
 });
-// const scrollHandle = _.throttle((e) => {
-//     scrollY.value = e.target.scrollingElement.scrollTop;
-// }, 1);
-const scrollHandle = (e) => {
+const scrollHandle = _.throttle((e) => {
     scrollY.value = e.target.scrollingElement.scrollTop;
-};
+}, 100);
+// const scrollHandle = (e) => {
+//     scrollY.value = e.target.scrollingElement.scrollTop;
+// };
 onMounted(() => {
     window.addEventListener("scroll", scrollHandle);
 });
@@ -97,13 +97,15 @@ onUnmounted(() => {
         </div>
 
         <!-- footer -->
-        <footer class="bg-[rgb(12,26,20)] w-screen">
+        <footer class="w-screen">
             <div class="container mx-auto py-6">
                 <div
                     class="w-full flex justify-center items-center space-x-4 my-10"
                 >
                     <ApplicationLogo class="h-6"></ApplicationLogo>
-                    <h2 class="text-xl text-white">KYO APPS</h2>
+                    <h2 class="text-xl text-gradient-mint-blue-dark">
+                        KYO APPS
+                    </h2>
                 </div>
                 <div
                     class="w-full flex flex-col md:flex-row md:justify-center md:space-x-2 items-center px-4 mt-4"

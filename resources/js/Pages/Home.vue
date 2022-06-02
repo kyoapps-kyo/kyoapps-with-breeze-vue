@@ -17,7 +17,7 @@ import { onMounted, onUnmounted } from "vue";
     </Head>
     <AppLayout v-slot="slotProps">
         <Masthead :scrollY="slotProps.scrollY" />
-        <AboutUs />
+        <AboutUs :scrollY="slotProps.scrollY" />
     </AppLayout>
 </template>
 

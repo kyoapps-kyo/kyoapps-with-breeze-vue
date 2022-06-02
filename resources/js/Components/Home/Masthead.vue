@@ -29,7 +29,7 @@ watchEffect(() => {
 <template>
     <div
         ref="refContainer"
-        class="h-screen w-screen flex flex-col items-center justify-center sticky -z-10 top-0"
+        class="h-screen w-screen flex flex-col items-center justify-center sticky -z-10 top-0 transition-transform duration-200"
         :style="`transform: translateY(${-progress * 20}vh);`"
     >
         <img
@@ -80,12 +80,3 @@ watchEffect(() => {
         </div>
     </div>
 </template>
-<style scoped>
-.text-gradient-mint-blue-dark {
-    background: -webkit-linear-gradient(-70deg, #a2facf 0%, #64acff 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-box-decoration-break: clone;
-}
-</style>
