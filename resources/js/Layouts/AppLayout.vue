@@ -102,7 +102,8 @@ onUnmounted(() => {
                         <li class="my-3">
                             <Link
                                 class="hover:border-b border-[#a2facf] inline-flex items-center text-gradient-mint-blue-dark"
-                                href="#"
+                                href="https://github.com/kyoapps-kyo/kyoapps-with-breeze-vue"
+                                target="_blank"
                                 >源码 / Source<Icon
                                     icon="ant-design:github-filled"
                                     width="20"
