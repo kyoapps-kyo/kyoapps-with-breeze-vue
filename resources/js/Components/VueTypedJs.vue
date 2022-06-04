@@ -7,7 +7,6 @@ const props = defineProps({
     backSpeed: Number,
     loop: Boolean,
 });
-console.log(props);
 function initTyped() {
     let typing = new Typed(".typing", {
         strings: props.strings,

@@ -1,10 +1,6 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from "vue";
 import ApplicationLogo from "@/Components/ApplicationLogo.vue";
-import BreezeDropdown from "@/Components/Dropdown.vue";
-import BreezeDropdownLink from "@/Components/DropdownLink.vue";
-import BreezeNavLink from "@/Components/NavLink.vue";
-import BreezeResponsiveNavLink from "@/Components/ResponsiveNavLink.vue";
 import { Link } from "@inertiajs/inertia-vue3";
 import { Icon } from "@iconify/vue";
 import _ from "lodash";
@@ -76,14 +72,25 @@ onUnmounted(() => {
                     </div>
                     <ul
                         v-if="showingNavigationDropdown"
-                        class="absolute top-15 right-10 backdrop-blur-sm bg-black/50 p-6 rounded-lg text-xl xl:text-2xl w-[200px]"
+                        class="absolute top-15 right-10 backdrop-blur-sm bg-black/50 p-6 rounded-lg text-xl xl:text-2xl w-[240px]"
                     >
                         <li class="my-3">
                             <Link
-                                class="hover:border-b border-[#a2facf] text-gradient-mint-blue-dark"
-                                href="#"
-                                >作品 / Works</Link
+                                class="hover:border-b border-[#a2facf] text-gradient-mint-blue-dark inline-flex items-center"
+                                :href="route('home')"
                             >
+                                KyoApps Web
+                                <ApplicationLogo
+                                    class="h-4 pl-2 inline"
+                                ></ApplicationLogo>
+                            </Link>
+                        </li>
+                        <li class="my-3">
+                            <Link
+                                class="hover:border-b border-[#a2facf] text-gradient-mint-blue-dark"
+                                :href="route('works')"
+                                >作品 / Works
+                            </Link>
                         </li>
                         <li class="my-3">
                             <Link

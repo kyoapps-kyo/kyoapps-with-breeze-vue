@@ -43,7 +43,8 @@ watchEffect(() => {
             <AppLogo></AppLogo>
         </div>
         <div
-            class="p-12 font-bold text-center flex flex-1 items-center justify-center flex-col"
+            class="p-12 font-bold text-center flex flex-1 items-center justify-center flex-col transition-opacity duration-1000 delay-300"
+            :class="{ 'opacity-0': !mounted, 'opacity-100': mounted }"
         >
             <h1 class="mb-6 text-4xl xl:text-5xl text-gradient-mint-blue-dark">
                 KYOAPPS - Web应用开发
@@ -63,7 +64,7 @@ watchEffect(() => {
         </div>
         <div
             id="scroll_down"
-            class="mb-24 rounded-full p-1 bg-gradient-to-br from-[#a2facf] to-[#64acff] flex-grow-0 lg:mb-32 transition-all duration-1000 transform"
+            class="mb-24 rounded-full p-1 bg-gradient-to-br from-[#a2facf] to-[#64acff] flex-grow-0 lg:mb-32 transition-all duration-1000 transform delay-500"
             :class="{
                 'opacity-0': !mounted,
                 'translate-y-20': !mounted,
